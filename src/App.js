@@ -30,7 +30,7 @@ function App() {
         <Route path="/new" element={<NewBeer />} />
       </Routes>
     </div>
-  );
+  ); //
 }
 
 export default App;
