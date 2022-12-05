@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Beers from "./pages/Beers";
 import Navbar from "./pages/components/Navbar";
 import Homepage from "./pages/Homepage";
@@ -12,13 +12,13 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location.pathname);
     if (location.pathname === "/") {
-      setShowNav(true);
-    } else {
       setShowNav(false);
+    } else {
+      setShowNav(true);
     }
   }, [location.pathname, showNav]);
+
   return (
     <div className="App">
       <nav>{showNav && <Navbar />}</nav>

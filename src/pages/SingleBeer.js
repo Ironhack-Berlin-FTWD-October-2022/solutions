@@ -12,6 +12,7 @@ const SingleBeer = () => {
       .then((response) => setBeer(response.data))
       .then((res) => {});
   });
+
   return (
     <div>
       <div className="col-sm-4">
