@@ -13,7 +13,7 @@ const Beer = () => {
         console.log(data);
       });
   }, []);
-
+  //
   return (
     <div class="container">
       <div className="row g-3">
